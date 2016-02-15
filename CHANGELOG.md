@@ -1,3 +1,5 @@
-## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+## 1.0.1 - First Patch
+* Added current cursor position styling
+* Added highlight styling
+* Added slight padding to the top of the editor
+* Dimmed semi-colon

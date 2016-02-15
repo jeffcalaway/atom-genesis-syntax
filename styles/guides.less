@@ -1,0 +1,32 @@
+//semi-colons
+span.punctuation.terminator.rule{
+    color:lighten(@syntax-background-color,20%);
+}
+
+//cursor line
+.line-number{
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border-left:2px solid transparent;
+
+    &.cursor-line{
+        color:@blue !important;
+        border-color:@blue;
+    }
+}
+
+//highlights
+atom-text-editor::shadow .highlight {
+  &.find-result .region {
+    background:transparent;
+    border:1px solid @blue;
+    border-radius:0;
+    box-shadow:0 0 1px 1px @blue,0 0 8px 0 @blue inset;
+  }
+}
+
+.editor .selection .region{
+    background:lighten(@syntax-background-color,6%) !important;
+}

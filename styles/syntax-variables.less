@@ -11,15 +11,15 @@
 
 // Guide colors
 @syntax-wrap-guide-color: @dark-gray;
-@syntax-indent-guide-color: @very-light-gray;
-@syntax-invisible-character-color: @very-light-gray;
+@syntax-indent-guide-color: lighten(@dark-gray,2%);
+@syntax-invisible-character-color: lighten(@dark-gray,2%);
 
 // For find and replace markers
 @syntax-result-marker-color: @light-gray;
 @syntax-result-marker-color-selected: white;
 
 // Gutter colors
-@syntax-gutter-text-color: #949DAF;
+@syntax-gutter-text-color: darken(@gray,5%);
 @syntax-gutter-text-color-selected: @gray;
 @syntax-gutter-background-color: @syntax-background-color;
 @syntax-gutter-background-color-selected: @syntax-background-color;

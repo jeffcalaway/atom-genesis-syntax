@@ -27,6 +27,14 @@ atom-text-editor::shadow .highlight {
   }
 }
 
-atom-text-editor .selection .region{
+.editor .selection .region{
     background:lighten(@syntax-background-color,6%) !important;
+}
+
+.bracket-matcher .region{
+    text-decoration: none;
+    border-bottom:none;
+    background:lighten(@syntax-background-color,8%);
+    position: absolute;
+    transform:scale(1.2);
 }
